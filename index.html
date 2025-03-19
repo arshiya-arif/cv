@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Resume</title>
+    <title>Arshiya Arif</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -116,67 +116,84 @@
     </style>
 </head>
 <body>
-    <div class="cv-container">
+    <div class="cv-container" itemscope itemtype="https://schema.org/Person">
         <div class="left-section">
-            <img src="profile.png" alt="Profile Picture">
-            <h2>Arshiya Arif</h2>
-            <p>Backend Developer</p>
+            <img src="profile.png" alt="Profile Picture" itemprop="image">
+            <h2 itemprop="name">Arshiya Arif</h2>
+            <p itemprop="jobTitle">Backend Developer</p>
             <div class="contact-info">
                 <h3>Contact</h3>
                 <ul>
-                    <li>📞 +92 304000000</li>
-                    <li>✉️ arshiyaarif@gmail.com</li>
-                    <li>📍 Sargodha</li>
+                    <li itemprop="telephone">📞 +92 304000000</li>
+                    <li itemprop="email">✉️ arshiyaarif@gmail.com</li>
+                    <li itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+                        <span itemprop="addressLocality">📍 Sargodha</span>
+                    </li>
                 </ul>
             </div>
             <div class="languages">
                 <h3>Language</h3>
                 <ul>
-                    <li>English</li>
-                    <li>Urdu</li>
-                   
+                    <li itemprop="knowsLanguage">English</li>
+                    <li itemprop="knowsLanguage">Urdu</li>
                 </ul>
             </div>
             <div class="skills">
                 <h3>Soft Skills</h3>
                 <ul>
-                    <li>Management Skills</li>
-                    <li>Creativity</li>
-                    <li>Critical Thinking</li>
-                    <li>Problem-Solving</li>
+                    <li itemprop="skills">Management Skills</li>
+                    <li itemprop="skills">Creativity</li>
+                    <li itemprop="skills">Critical Thinking</li>
+                    <li itemprop="skills">Problem-Solving</li>
                 </ul>
             </div>
         </div>
         <div class="right-section">
             <h1>About Me</h1>
-            <p>Dedicated and detail-oriented Backend Developer with expertise in Node.js, Express.js, and MongoDB. Passionate about building scalable and efficient web applications with a strong foundation in REST APIs, database management, and front-end integration. Also skilled in frontend development and actively expanding knowledge in DevOps.
+            <p itemprop="description">Dedicated and detail-oriented Backend Developer with expertise in Node.js, Express.js, and MongoDB. Passionate about building scalable and efficient web applications with a strong foundation in REST APIs, database management, and front-end integration. Also skilled in frontend development and actively expanding knowledge in DevOps.
 
                 A quick learner with strong problem-solving abilities, I thrive in collaborative environments and enjoy tackling complex challenges to create innovative solutions.</p>
             <div class="section">
                 <h3>Education</h3>
-                <p><strong>The Reader College</strong></p>
-                <p>FSC Pre-Engineering (2019-2021)</p>
-                <p><strong>University of Sargodha</strong></p>
-                <p>Bachelors of Computer Science (2021-2025)</p>
+                <div itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                    <p><strong itemprop="name">The Reader College</strong></p>
+                    <p itemprop="description">FSC Pre-Engineering (2019-2021)</p>
+                </div>
+                <div itemprop="alumniOf" itemscope itemtype="https://schema.org/EducationalOrganization">
+                    <p><strong itemprop="name">University of Sargodha</strong></p>
+                    <p itemprop="description">Bachelors of Computer Science (2021-2025)</p>
+                </div>
             </div>
             <div class="section">
                 <h3>Personal Projects</h3>
                 <ul>
-                    <li><strong>To-Do App - </strong>CRUD operations with authentication</li>
-                    <li><strong>Task Management App - </strong>Task prioritization, due dates, and collaboration</li>
-                    <li><strong>Blog API with JWT - </strong>Secure user authentication, CRUD blog operations</li>
-                    <li><strong>Real-Time Chat App - </strong>Live messaging with WebSockets and JWT authentication</li>
+                    <li itemprop="worksFor" itemscope itemtype="https://schema.org/CreativeWork">
+                        <strong itemprop="name">To-Do App - </strong>
+                        <span itemprop="description">CRUD operations with authentication</span>
+                    </li>
+                    <li itemprop="worksFor" itemscope itemtype="https://schema.org/CreativeWork">
+                        <strong itemprop="name">Task Management App - </strong>
+                        <span itemprop="description">Task prioritization, due dates, and collaboration</span>
+                    </li>
+                    <li itemprop="worksFor" itemscope itemtype="https://schema.org/CreativeWork">
+                        <strong itemprop="name">Blog API with JWT - </strong>
+                        <span itemprop="description">Secure user authentication, CRUD blog operations</span>
+                    </li>
+                    <li itemprop="worksFor" itemscope itemtype="https://schema.org/CreativeWork">
+                        <strong itemprop="name">Real-Time Chat App - </strong>
+                        <span itemprop="description">Live messaging with WebSockets and JWT authentication</span>
+                    </li>
                 </ul>
             </div>
             <div class="section">
                 <h3>Skills</h3>
-                <p><strong>Backend Development: </strong>Node.js, Express.js, REST APIs</p>
+                <p><strong itemprop="skills">Backend Development: </strong>Node.js, Express.js, REST APIs</p>
                 <div class="progress-bar"><div style="width: 88%;"></div></div>
-                <p><strong>Frontend Development: </strong>HTML, CSS, JavaScript</p>
+                <p><strong itemprop="skills">Frontend Development: </strong>HTML, CSS, JavaScript</p>
                 <div class="progress-bar"><div style="width: 71%;"></div></div>
-                <p><strong>Database Management: </strong>MongoDB, SQL</p>
+                <p><strong itemprop="skills">Database Management: </strong>MongoDB, SQL</p>
                 <div class="progress-bar"><div style="width: 88%;"></div></div>
-                <p><strong>Authentication & Security: </strong>JWT, bcrypt, role-based access control</p>
+                <p><strong itemprop="skills">Authentication & Security: </strong>JWT, bcrypt, role-based access control</p>
                 <div class="progress-bar"><div style="width: 80%;"></div></div>
             </div>
         </div>
